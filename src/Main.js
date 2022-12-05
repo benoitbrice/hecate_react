@@ -1,15 +1,13 @@
 import Cards from './components/Cards';
 
-function Main(){
+function Main(props){
+
     return(
         <>
         <div>Contenu</div>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
-        <Cards></Cards>
+        {(props.listSchool).map((obj, i) => {
+            return <Cards obj={obj}></Cards>
+        })}
        </>
     )
 }

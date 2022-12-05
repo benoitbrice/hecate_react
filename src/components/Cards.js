@@ -1,6 +1,6 @@
-function Cards(){
+function Cards(props){
     return(
-        <div>Cards</div>
+        <div>{props.obj.name}</div>
     )
 }
 
